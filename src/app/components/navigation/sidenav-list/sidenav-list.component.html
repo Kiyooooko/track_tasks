@@ -1,0 +1,24 @@
+<mat-nav-list>
+    <a mat-list-item routerLink="/board" (click)="onSidenavClose()">
+        <mat-icon class="icon">shutter_speed</mat-icon>
+        <span class="nav-caption">Board</span>
+    </a>
+    <a mat-list-item routerLink="/projects" (click)="onSidenavClose()">
+        <mat-icon class="icon">menu</mat-icon>
+        <span class="nav-caption">Projects</span>   
+    </a>
+    <a mat-list-item routerLink="#" (click)="onSidenavClose()">
+        <mat-icon class="icon">settings</mat-icon>
+        <span class="nav-caption">Settings</span>
+    </a>
+    <div class="bottom">
+        <a mat-list-item routerLink="#" (click)="onSidenavClose()">
+            <mat-icon class="icon">update</mat-icon>
+            <span class="nav-caption">Upgrade</span>
+        </a>
+        <a mat-list-item routerLink="#" (click)="onSidenavClose()">
+            <mat-icon class="icon logout">radio_button_checked</mat-icon>
+            <span class="nav-caption">Logout</span>
+        </a>
+    </div>
+</mat-nav-list>
