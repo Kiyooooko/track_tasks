@@ -17,9 +17,17 @@ a {
     }
 }
 
-.bottom {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    margin-bottom: 20px;
+.sidenav {
+    &_item {
+        &_update {
+            position: absolute;
+            bottom: 68px;
+        }
+
+        &_logout {
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 20px;
+        }
+    }
 }
