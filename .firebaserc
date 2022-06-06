@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tracker-1a55a": {
+      "hosting": {
+        "task_tracking": [
+          "tracker-1a55a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tracker-1a55a"
+  }
+}
