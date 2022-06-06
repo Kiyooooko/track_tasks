@@ -1,20 +1,15 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   @Output() public sidenavToggle = new EventEmitter();
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   public onToggleSidenav = () => { 
     this.sidenavToggle.emit();
   }
-
 }
