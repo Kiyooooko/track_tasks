@@ -1,11 +1,26 @@
-<mat-toolbar>
-    <div>
-        <button mat-icon-button (click)="onToggleSidenav()">
-            <mat-icon class="menu">menu</mat-icon>
-        </button>
+<mat-toolbar class="toolbar">
+    <div class="toolbar--actions">
+        <div>
+            <button mat-icon-button (click)="onToggleSidenav()">
+                <mat-icon class="menu">menu</mat-icon>
+            </button>
+        </div>
+        <div>
+            <mat-icon class="refresh">refresh</mat-icon>
+            <a routerLink="/board">Dashboard</a>
+        </div>
     </div>
-    <div>
-        <mat-icon class="refresh">refresh</mat-icon>
-        <a routerLink="/board">Dashboard</a>
-    </div>
+    <ng-container *ngIf="auth.isLoggedIn$ | async as user; else authButtons">
+        <div>
+            <span>User {{ user?.displayName }} is logged in</span>
+            <button mat-button (click)="signOut()">Sign Out</button>
+        </div>
+    </ng-container>
 </mat-toolbar>
+
+<ng-template #authButtons>
+    <div>
+        <a routerLink="/signin" routerLinkActive="active" mat-button>Signin</a>
+        <a routerLink="/signup" routerLinkActive="active" mat-button>Signup</a>
+    </div>
+</ng-template>

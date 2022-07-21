@@ -1,6 +1,8 @@
 mat-toolbar{
     border-radius: 3px;
     background-color: rgb(141, 131, 131);
+    display: flex;
+    justify-content: space-between;
 
     a {
         text-decoration: none;
@@ -32,4 +34,8 @@ mat-toolbar{
         background-color: #7b1fa2;
 
     }
+}
+
+.toolbar--actions {
+    display: flex;
 }
