@@ -1,1 +1,18 @@
-<p>projects works!</p>
+<div>Projects:</div>
+<ul>
+  <li *ngFor="let project of projects$ | async">
+    {{ project.title }}
+  </li>
+</ul>
+
+<div>
+  <button (click)="addProject()">Add project</button>
+</div>
+
+<div>
+  <button (click)="updateProject()">Update project</button>
+</div>
+
+<div>
+  <button (click)="deleteProject('new')">Delete project</button>
+</div>
