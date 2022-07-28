@@ -4,15 +4,14 @@ import { AuthService } from './core/services/auth.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  constructor(
-    private auth: AuthService
-  ) { }
+  constructor(private auth: AuthService) {}
 
   ngOnInit(): void {
-    this.auth.getData().subscribe((data) => {console.log(data.val())})
+    this.auth.getData().subscribe((data) => {
+      console.log(data.val());
+    });
   }
-
 }

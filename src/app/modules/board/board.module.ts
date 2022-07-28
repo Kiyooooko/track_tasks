@@ -6,15 +6,10 @@ import { BoardRoutingModule } from './board.routing-module';
 
 import { BoardComponent } from './board/board.component';
 
-
 @NgModule({
   declarations: [BoardComponent],
-  imports: [
-    CommonModule,
-    MaterialModule,
-    BoardRoutingModule,
-  ],
+  imports: [CommonModule, MaterialModule, BoardRoutingModule],
   exports: [BoardComponent],
   providers: [],
 })
-export class BoardModule { }
+export class BoardModule {}

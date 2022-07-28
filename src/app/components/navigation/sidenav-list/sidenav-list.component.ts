@@ -1,4 +1,9 @@
-import { Component, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component,
+  Output,
+  EventEmitter,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { SidenavItem, sidenavItems } from './sidenav.config';
 
 @Component({
@@ -14,7 +19,7 @@ export class SidenavListComponent {
 
   onSidenavClose = () => {
     this.sidenavClose.emit();
-  }
+  };
 
   trackByTitle(index: number, item: SidenavItem): string {
     return item.title;

@@ -11,7 +11,7 @@ export const sidenavItems: SidenavItem[] = [
     icon: 'shutter_speed',
     title: 'Board',
     cssClass: '',
-  }, 
+  },
   {
     routerLink: '/projects',
     icon: 'menu',
@@ -36,4 +36,4 @@ export const sidenavItems: SidenavItem[] = [
     title: 'Logout',
     cssClass: 'sidenav_item_logout',
   },
-]
+];

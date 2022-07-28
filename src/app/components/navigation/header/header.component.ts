@@ -1,4 +1,9 @@
-import { Component, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component,
+  Output,
+  EventEmitter,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +14,7 @@ import { Component, Output, EventEmitter, ChangeDetectionStrategy } from '@angul
 export class HeaderComponent {
   @Output() public sidenavToggle = new EventEmitter();
 
-  public onToggleSidenav = () => { 
+  public onToggleSidenav = () => {
     this.sidenavToggle.emit();
-  }
+  };
 }
