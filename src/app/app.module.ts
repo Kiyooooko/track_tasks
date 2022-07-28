@@ -27,7 +27,7 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
     BrowserAnimationsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    provideDatabase(() => getDatabase())
+    provideDatabase(() => getDatabase())     
   ],
   providers: [],
   bootstrap: [AppComponent]
