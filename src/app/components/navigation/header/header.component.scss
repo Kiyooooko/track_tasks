@@ -1,35 +1,35 @@
-mat-toolbar{
-    border-radius: 3px;
-    background-color: rgb(141, 131, 131);
+mat-toolbar {
+  border-radius: 3px;
+  background-color: rgb(141, 131, 131);
 
-    a {
-        text-decoration: none;
-        color: black;
-        font-size: small;
-        padding: 7px;
-        border: 1px solid rgb(45, 47, 47);
-        border-radius: 15px;
-        margin-left: 20px;
-    
-        &:hover, &:active {
-            border-color: white;
-            color: white;
-        }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    padding: 7px;
+    border: 1px solid rgb(45, 47, 47);
+    border-radius: 15px;
+    margin-left: 20px;
+
+    &:hover,
+    &:active {
+      border-color: white;
+      color: white;
     }
+  }
 
-    .menu {
-        color: black;
-    }
+  .menu {
+    color: black;
+  }
 
-    .refresh {
-        color: white;
-        transform: scale(-1, 1);
-        vertical-align: middle;
-        margin-left: 20px;
-        border: 1px solid #7b1fa2;
-        border-radius: 15px;
-        padding: 2px;
-        background-color: #7b1fa2;
-
-    }
+  .refresh {
+    color: white;
+    transform: scale(-1, 1);
+    vertical-align: middle;
+    margin-left: 20px;
+    border: 1px solid #7b1fa2;
+    border-radius: 15px;
+    padding: 2px;
+    background-color: #7b1fa2;
+  }
 }

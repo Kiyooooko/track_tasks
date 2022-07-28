@@ -1,33 +1,33 @@
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 
-    &:hover {
-        color: lightgray;
-    }
+  &:hover {
+    color: lightgray;
+  }
 
-    .icon {
-        font-size: 35px;
-    }
+  .icon {
+    font-size: 35px;
+  }
 
-    .nav-caption {
-        display: inline-block;
-        padding: 15px 0 0 25px;
-        font-size: x-small;
-    }
+  .nav-caption {
+    display: inline-block;
+    padding: 15px 0 0 25px;
+    font-size: x-small;
+  }
 }
 
 .sidenav {
-    &_item {
-        &_update {
-            position: absolute;
-            bottom: 68px;
-        }
-
-        &_logout {
-            position: absolute;
-            bottom: 0;
-            margin-bottom: 20px;
-        }
+  &_item {
+    &_update {
+      position: absolute;
+      bottom: 68px;
     }
+
+    &_logout {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 20px;
+    }
+  }
 }
