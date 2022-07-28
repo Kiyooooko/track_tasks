@@ -9,6 +9,7 @@
     "test": "ng test",
     "eslint": "ng run task_tracking:eslint",
     "eslint:fix": "ng run task_tracking:eslint --fix",
+    "test-ci": "ng test --karma-config=karma.conf.ci.js --no-progress",
     "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\""
   },
   "private": true,
